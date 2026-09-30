@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    float mb, bit;
+    cout << "Enyer the size in megabytes (MB): ";
+    cin >> mb;
+    bit = mb * 1024 * 1024 * 8;
+    cout << mb << " MB is equivalent to " << bit << " bits.";
+}
