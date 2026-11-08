@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int price, discount;
+    while(true)
+    {
+    cout << "Enter Total Price: ";
+    cin >> price;
+    if(price == 500)
+    {
+        discount = (95.0/100) * price;
+        cout << "Price after Discount: " << discount << endl;
+    }
+    else
+    {
+        cout << "Price after Discount: " << price << endl;
+    }
+    }
+}
