@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+void temperature(int temp);
+int main()
+{
+    float temp;
+    cout << "Enter Temperaturein Fahrenheit: ";
+    cin >> temp;
+    temperature(temp);
+}
+
+void temperature(int temp)
+{
+    if(temp == 98)
+    {
+        cout << "Normal" << endl;
+        cout << "Program Ends" << endl;
+    }
+    else
+    {
+        cout << "Program Ends" << endl;
+    }
+}
