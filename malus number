@@ -1,0 +1,39 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int Malus(int num);
+int main()
+{
+    int num, result;
+    cout << "Entet a number: ";
+    cin >> num;
+    result = Malus(num);
+    cout << "Sum: " << result << endl;
+    if(result == num)
+    {
+        cout << "Malus Number" << endl;
+    }
+    else
+    {
+        cout << "Not a Malus Number" << endl;
+    }
+}
+
+int Malus(int num)
+{
+    int temp=0, sum=0, count=0, n=num, base, power;
+    while(num>0)
+    {
+        temp = num%10;
+        num = num/10;
+        count++;
+    }
+    for(int i=count; i>=1; i--)
+    {
+        base = n%10;
+        n=n/10;
+        power = pow(base, i);
+        sum = sum + power;
+    }
+    return sum;
+}
